@@ -6,7 +6,7 @@ After=network.service
 type=simple
 User=faisal
 WorkingDirectory=/home/faisal
-ExecStart=/usr/bin/ngrok start --all --config="/idreesia-digitalocean/ngrok/config.yml"
+ExecStart=/usr/bin/ngrok start --all --config="./idreesia-digitalocean/ngrok/config.yml"
 Restart=on-failure
 
 [Install]
