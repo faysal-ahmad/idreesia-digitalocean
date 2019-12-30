@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./ngrok service start
+systemctl start ngrok.service

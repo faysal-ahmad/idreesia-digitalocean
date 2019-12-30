@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./ngrok service stop
+systemctl start ngrok.service
