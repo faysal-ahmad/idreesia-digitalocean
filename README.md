@@ -8,7 +8,7 @@ This repository Contains the Ddocker-Compose file and helper scripts to get the 
 
 - Add a non-root user and add it to the `sudo` and `docker` group. Instructions here `https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04`
 
-- Install dropbox headless `https://www.dropbox.com/install-linux`. Also download the additional script `Dropbox.py` from this page and set that up.
+- Install dropbox headless `https://www.dropbox.com/install-linux`. Also download the additional script `Dropbox.py` from this page and set that up. `https://www.ostechnix.com/install-dropbox-in-ubuntu-18-04-lts-server/`
 
 - Remove unnecessary folders from dropbox syncing using the above script.
 
