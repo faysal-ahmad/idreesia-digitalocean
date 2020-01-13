@@ -6,3 +6,9 @@ tunnels:
     bind_tls: true
     region: us
     subdomain: 381-erp-server
+  mobile_server:
+    addr: 3001
+    proto: http
+    bind_tls: true
+    region: us
+    subdomain: 381-mobile-server

@@ -13,6 +13,13 @@ services:
     depends_on:
       - mongo
 
+  mobile:
+    image: faysalahmad/idreesia-mobile
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
+
   jobs:
     image: faysalahmad/idreesia-jobs
     ports:
