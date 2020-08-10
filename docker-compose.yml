@@ -1,5 +1,10 @@
 version: "3"
 services:
+  nginx:
+    image: faysalahmad/idreesia-nginx
+    ports:
+      - "80:80"
+
   mongo:
     image: faysalahmad/idreesia-db
     volumes:

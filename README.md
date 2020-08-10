@@ -1,6 +1,6 @@
 # Overview
 
-This repository Contains the Ddocker-Compose file and helper scripts to get the idreesia-erp up and running on a digital ocean droplet.
+This repository Contains the Docker-Compose file and helper scripts to get the idreesia-erp up and running on a digital ocean droplet.
 
 ## Setup Steps
 
