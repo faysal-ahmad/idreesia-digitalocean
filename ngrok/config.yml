@@ -12,3 +12,9 @@ tunnels:
     bind_tls: true
     region: us
     subdomain: 381-mobile-server
+  mongo_server:
+    addr: 3002
+    proto: http
+    bind_tls: true
+    region: us
+    subdomain: 381-db-server
