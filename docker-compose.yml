@@ -14,7 +14,7 @@ services:
   mongo-express:
     image: faysalahmad/idreesia-mongo-express
     ports:
-      - "3002:8081"
+      - "3003:8081"
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongo
       - ME_CONFIG_BASICAUTH_USERNAME=erp-admin
