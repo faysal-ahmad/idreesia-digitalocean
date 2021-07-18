@@ -9,7 +9,7 @@ services:
     image: faysalahmad/idreesia-db
     volumes:
       - ./data/mongo:/data/db
-      - ~/Dropbox/Idreesia-ERP-Backup:/data/backup
+      - /mnt/volume_sgp1_01/backup:/data/backup
 
   mongo-express:
     image: faysalahmad/idreesia-mongo-express
