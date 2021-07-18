@@ -8,7 +8,7 @@ services:
   mongo:
     image: faysalahmad/idreesia-db
     volumes:
-      - ./data/mongo:/data/db
+      - /mnt/volume_sgp1_01/data:/data/db
       - /mnt/volume_sgp1_01/backup:/data/backup
 
   mongo-express:
