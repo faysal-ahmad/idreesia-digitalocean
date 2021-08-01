@@ -5,8 +5,8 @@ services:
     restart: unless-stopped
     volumes:
       - ./config/nginx:/etc/nginx/conf.d
-      - ./config/certbot/conf:/etc/letsencrypt
-      - ./config/certbot/www:/var/www/certbot
+      - /mnt/volume_sgp1_01/certbot/conf:/etc/letsencrypt
+      - /mnt/volume_sgp1_01/certbot/www:/var/www/certbot
     ports:
       - "80:80"
       - "443:443"
@@ -16,8 +16,8 @@ services:
     image: certbot/certbot:v1.17.0
     restart: unless-stopped
     volumes:
-      - ./config/certbot/conf:/etc/letsencrypt
-      - ./config/certbot/www:/var/www/certbot
+      - /mnt/volume_sgp1_01/certbot/conf:/etc/letsencrypt
+      - /mnt/volume_sgp1_01/certbot/www:/var/www/certbot
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
 
   mongo:
