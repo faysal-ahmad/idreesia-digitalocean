@@ -28,3 +28,6 @@ docker-compose exec mongo /scripts/restore-db.sh
 ```
 docker-compose up -d web jobs
 ```
+
+- Configured Nginx and Certbot by following this article
+  `https://pentacent.medium.com/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71`
