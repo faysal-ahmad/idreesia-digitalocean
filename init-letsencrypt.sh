@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(idreesia-erp.com www.idreesia-erp.com)
+domains=(idreesia-erp.com www.idreesia-erp.com database.idreesia-erp.com)
 rsa_key_size=4096
 data_path="/mnt/volume_sgp1_01/certbot"
 email="faisal.idreesi@gmail.com"
