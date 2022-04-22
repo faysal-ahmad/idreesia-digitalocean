@@ -7,7 +7,7 @@ fi
 
 domains=(idreesia-erp.com www.idreesia-erp.com database.idreesia-erp.com)
 rsa_key_size=4096
-data_path="/mnt/volume_sgp1_01/certbot"
+data_path="~/idreesia-digitalocean/certbot"
 email="faisal.idreesi@gmail.com"
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
