@@ -1,11 +1,12 @@
-idreesia-erp.com {
-	route /* {
-		reverse_proxy web:3000
-	}
-}
-
 database.idreesia-erp.com {
 	route /* {
 		reverse_proxy mongo-express:8000
 	}
 }
+
+idreesia-erp.com {
+  route /* {
+		reverse_proxy web:3000
+	}
+}
+
