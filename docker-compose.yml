@@ -29,7 +29,7 @@ services:
   mongo-express:
     image: faysalahmad/idreesia-mongo-express
     ports:
-      - "3003:8081"
+      - "8000:8081"
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongo
       - ME_CONFIG_BASICAUTH_USERNAME=erp-admin
@@ -57,3 +57,15 @@ services:
       - "3002:3002"
     depends_on:
       - mongo
+
+  caddy:
+    image: caddy:2.6.1-alpine
+    restart: unless-stopped
+    depends_on:
+      - web
+      - jobs
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./configs/caddy:/etc/caddy
