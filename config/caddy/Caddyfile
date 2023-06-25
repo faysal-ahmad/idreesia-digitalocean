@@ -5,6 +5,9 @@ database.idreesia-erp.com {
 }
 
 idreesia-erp.com {
+  route /database-explorer {
+		reverse_proxy mongo-express:8000
+	}
   route /* {
 		reverse_proxy web:3000
 	}
