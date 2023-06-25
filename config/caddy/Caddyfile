@@ -1,12 +1,12 @@
 database.idreesia-erp.com {
 	route /* {
-		reverse_proxy mongoexpress
+		reverse_proxy mongoexpress:8081
 	}
 }
 
 idreesia-erp.com {
   route /database-explorer {
-		reverse_proxy mongoexpress:8000
+		reverse_proxy mongoexpress:8081
 	}
   route /* {
 		reverse_proxy web:3000
